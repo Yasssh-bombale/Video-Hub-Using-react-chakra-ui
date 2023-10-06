@@ -29,6 +29,7 @@ const Header = () => {
         w={'10'}
         h={'10'}
         borderRadius={'full'}
+        zIndex={'overlay'}
         onClick={onOpen}
       >
         <BiMenuAltLeft size={'20'} />
@@ -48,7 +49,7 @@ const Header = () => {
                 <Link to={'/videos'}>Videos</Link>
               </Button>
               <Button onClick={onClose} variant={'ghost'} colorScheme="purple">
-                <Link to={'/videos?categoru=free'}>Free videos</Link>
+                <Link to={'/videos?category=free'}>Free videos</Link>
               </Button>
               <Button onClick={onClose} variant={'ghost'} colorScheme="purple">
                 <Link to={'/upload'}>Upload video</Link>

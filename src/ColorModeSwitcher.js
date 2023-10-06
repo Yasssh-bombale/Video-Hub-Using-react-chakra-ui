@@ -14,6 +14,7 @@ const ColorModeSwitcher = props => {
       // 1 unit in chakraUi is equal to 16px hence ,,4 unit=16px;
       top={'4'}
       right={'4'}
+      zIndex={'overlay'}
       onClick={toggleColorMode}
       icon={<SwitchIcon />}
       {...props}
